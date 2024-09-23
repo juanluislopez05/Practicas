@@ -1,0 +1,217 @@
+<!--<h1>Juan Luis López Martínez</h1>
+<p><strong>Ingeniero de Software</strong> con 4 años de experiencia</p>
+<h2 id="experiencia">Experiencia</h2>
+ <ul>
+ <li class="">ESII</li>
+ <li class="">Maestranza Aérea</li>
+ </ul>
+ <img title="Foto ingeniero" src="ingeniero.jpg" alt="Fotografia de un ingeniero" width="400" height="300">
+ <img id="foto-oculta" title="imagen oculta" src="oculta.jpg" alt="imagen oculta" hidden>
+-->
+
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="theme-color" content="#09f">
+     <meta name="description" content="Portfolio de Juan Luis López Martínez, ingeniero de software.">
+     <meta name="robots" content="index, follow">
+     <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+     <title>Portfolio JAG</title>
+
+     <style>
+         body {
+             background: rgba(208, 208, 208, 0.9);
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+         }
+         header {
+             background-color: #333;
+             color: white;
+             padding: 10px;
+             text-align: center;
+         }
+         nav a {
+             margin: 0 15px;
+             color: white;
+             text-decoration: none;
+         }
+         nav a:hover {
+             text-decoration: underline;
+         }
+         main {
+             padding: 20px;
+         }
+         section {
+             margin-bottom: 20px;
+         }
+         form {
+             margin-bottom: 20px;
+         }
+         video, iframe {
+             display: block;
+             margin: 0 auto;
+         }
+         dialog {
+             border: 1px solid #ccc;
+             padding: 20px;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+         }
+         button {
+             display: block;
+             margin: 10px auto;
+             padding: 10px 20px;
+             background-color: #333;
+             color: white;
+             border: none;
+             cursor: pointer;
+         }
+         button:hover {
+             background-color: #555;
+         }
+     </style>
+ </head>
+ <body>
+
+     <!-- Encabezado con navegación -->
+     <header>
+         <nav>
+             <a href="#experiencia">Experiencia</a>
+             <a href="#proyectos">Proyectos</a>
+             <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
+         </nav>
+     </header>
+
+     <!-- Video de introducción -->
+     <video src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" controls autoplay muted poster="img/poster.jpg"></video>
+
+     <!-- Contenido principal -->
+     <main>
+         <!-- Sección de experiencia -->
+         <section id="experiencia">
+             <h2>Experiencia</h2>
+             <ul>
+                 <li>ESII</li>
+                 <li>Maestranza Aérea</li>
+             </ul>
+         </section>
+
+         <aside>
+            <header>
+                <h3>Mis tecnologías favoritas</h3>
+            </header>
+            <ol>
+                <li>HTML</li>
+                <li>JavaScript</li>
+            </ol>
+        </aside>
+           
+
+         <!-- Sección de proyectos -->
+         <section id="proyectos">
+             <h2>Proyectos realizados</h2>
+             <article>
+                 <header>
+                     <h4>Sitio Web Corporativo</h4>
+                 </header>
+                 <p>Desarrollo de un sitio Web corporativo con interfaz moderna.</p>
+             </article>
+
+             <article>
+                 <header>
+                     <h4>Aplicación e-commerce</h4>
+                 </header>
+                 <p>Desarrollo de una aplicación Web para una tienda en línea.</p>
+             </article>
+
+             <article>
+                 <header>
+                     <h4>Aplicación móvil para gimnasios</h4>
+                 </header>
+                 <p>Desarrollo de una app móvil para gestionar gimnasios.</p>
+             </article>
+         </section>
+
+         <!-- Sección de formulario de contacto -->
+         <section>
+             <h2>Formulario de contacto</h2>
+             <form method="post" action="/">
+                 <fieldset>
+                     <legend>Información personal</legend>
+                     <div>
+                         <label for="name">Nombre:</label>
+                         <input type="text" id="name" placeholder="JAG" required>
+                     </div>
+                     <div>
+                         <label for="em">Email:</label>
+                         <input type="email" id="em" placeholder="a@a.es" required>
+                     </div>
+                 </fieldset>
+
+                 <fieldset>
+                     <legend>Otros</legend>
+                     <div>
+                         <label for="why">¿Sobre qué quieres contactar?</label>
+                         <select name="why" id="why">
+                             <option value="1">Trabajo</option>
+                             <option value="2">Consulta</option>
+                             <option value="3">Otros</option>
+                         </select>
+                     </div>
+                     <div>
+                         <label for="terms">Acepta los términos</label>
+                         <input type="checkbox" id="terms" name="terms" required>
+                     </div>
+                     <div>
+                         <label>¿Qué lenguaje necesitas ayuda?</label>
+                         <input list="lang" name="lang">
+                         <datalist id="lang">
+                             <option value="JavaScript"></option>
+                             <option value="Python"></option>
+                             <option value="C++"></option>
+                         </datalist>
+                     </div>
+                 </fieldset>
+
+                 <!-- Botones -->
+                 <input type="submit" value="Enviar contacto">
+                 <button type="reset">Borrar formulario</button>
+             </form>
+         </section>
+
+         <!-- Sección de preguntas frecuentes -->
+         <section>
+             <h2>Preguntas frecuentes</h2>
+             <details>
+                 <summary>¿Cómo contacto?</summary>
+                 <p>Enviando un correo a jag@jag.com</p>
+             </details>
+             <details>
+                 <summary>¿Cómo me llamo?</summary>
+                 <p>JAG</p>
+             </details>
+         </section>
+
+         <!-- Video insertado con iframe de YouTube -->
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/3haRlLrFOEM?si=yL2h3tLsXl0W9D9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         <!-- Diálogo modal -->
+         <dialog id="modal">
+             <h1>Se puede abrir un modal</h1>
+             <p>Es totalmente nativo</p>
+             <button id="cerrar">Cerrar</button>
+         </dialog>
+         <button id="show">Ver más información</button>
+     </main>
+
+     <!-- Pie de página -->
+     <footer>
+         <p>&copy; 2024 Juan Luis López Martínez</p>
+     </footer>
+
+   
+   
+ </body>
+ </html>
